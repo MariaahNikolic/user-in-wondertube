@@ -1,0 +1,16 @@
+//Media queries
+$breakpoint-desktop: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 600px;
+
+//Grid     1    2     3     4     5     6     7     8
+$sm-space: 6px, 12px, 18px, 24px, 30px, 36px, 42px, 48px;
+$md-space: 54px, 60px, 66px, 72px, 78px, 84px, 90px, 96px;
+$lg-space: 102px, 126px, 138px, 150px, 162px, 168px;
+
+
+//Colors
+$main-red: #FF0000;
+$main-yellow: #FFEC00;
+$white: #FFFFFF;
+$black: #000000;

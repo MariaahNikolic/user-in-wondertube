@@ -1,0 +1,28 @@
+#player-wrapper {
+  position: absolute;
+}
+
+.progress-bar-wrapper {
+  height: 86px;
+  background-color: $black;
+}
+
+[id^="react-player-"] {
+  width: 100% !important;
+  //height: calc(100vh - 120px) !important;
+  height: 800px !important;
+}
+
+iframe {
+    //height: 100vh;
+    height: 800px;
+
+  }
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none;
+}

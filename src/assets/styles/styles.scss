@@ -1,0 +1,15 @@
+@import 'abstracts/_variables.scss';
+@import 'abstracts/_fonts.scss';
+@import 'abstracts/_mixins.scss';
+
+@import 'base/_base.scss';
+@import 'base/_typography.scss';
+
+@import 'layout/_header.scss';
+@import 'layout/_footer.scss';
+
+@import 'pages/_home.scss';
+@import 'pages/_about.scss';
+@import 'pages/_story.scss';
+
+@import 'components/_slider.scss';

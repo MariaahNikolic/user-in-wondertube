@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "content": "If there are unnecessary video recommendations, the viewer can click on the three-dot icon and select 'Not interested' to only remove that particular video or 'Don't recommend channel' to remove all further video suggestions from the recommended videos section.",
+    "image": "tip-1.png"
+  },
+  {
+    "id": 2,
+    "content": "Block third-parties cookies on your social media to stop advertisers from tracking your every move. Save battery life and data by keeping your browsing private.",
+    "image": "tip-2.png"
+  }
+]

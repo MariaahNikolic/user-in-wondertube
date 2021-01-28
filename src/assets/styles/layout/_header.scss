@@ -1,0 +1,15 @@
+.nav-bar {
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &__right {
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.App-header {
+  background-color: $white;
+}

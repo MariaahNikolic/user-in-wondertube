@@ -1,0 +1,9 @@
+.bar-buttons {
+  display: flex;
+  justify-content: center;
+  .bar-btn {
+    background-color: $white;
+    padding: 4px 24px;
+    margin: 0 24px;
+  }
+}
