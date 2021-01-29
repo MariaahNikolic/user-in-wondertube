@@ -10,7 +10,7 @@ const Tips = ({ match }) => {
   const param = Number(match.params.id);
 
   const nextTip = (id) => {
-    history.push(id !== tips.length ? `/tips/${id + 1}` : `/finished`);
+    history.push(id !== tips.length ? `/tips/${id + 1}` : `/tips-finished`);
   };
 
   const prevTip = (id) => {

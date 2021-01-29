@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Tips from "./components/view/tips/Tips";
 import TipsEnd from "./components/view/tips/TipsEnd";
 import Intro from "./components/view/intro/Intro";
+import IntroEnd from "./components/view/intro/IntroEnd";
 import Story from "./components/view/Story";
 import About from "./components/view/About";
 import Footer from "./components/layout/Footer";
@@ -27,15 +28,20 @@ const App = () => {
                 return <Tips {...props} />;
               }}
             ></Route>
-            <Route path="/finished">
+            <Route path="/tips-finished">
               <TipsEnd />
             </Route>
+
             <Route
               path="/intro/:id?"
               render={(props) => {
                 return <Intro {...props} />;
               }}
             ></Route>
+            <Route path="/intro-finished">
+              <IntroEnd />
+            </Route>
+
             <Route path="/story">
               <Story />
             </Route>

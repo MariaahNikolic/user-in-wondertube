@@ -12,7 +12,7 @@ const About = () => {
               <strong>User In The Wondertube</strong>
               is a project developed during the Final Synthesis Laboratory in
               the Density Lab at Politecnico di Milano.
-              <br />
+              <br /> <br />
               This project is an extension of phase II, which explored the topic
               of content farms. In that phase, we focused on a content farm
               5-minute crafts and their YouTube channel. We collected data on
@@ -22,7 +22,7 @@ const About = () => {
               number of views. We interpreted this data to identify trends in
               the algorithms of YouTube, which finally led us to investigate how
               content farms use these trends to increase their reach.
-              <br />
+              <br /> <br />
               With this data, we are able to recreate the content farm business
               model that uses social media for monetization, making profits with
               both the content farm company and the social networking site. In
@@ -31,7 +31,7 @@ const About = () => {
               on company websites. We present it from different perspectives:
               the content farm company, the algorithms of online platforms and
               their users.
-              <br />
+              <br /> <br />
               <em>User In The Wondertube</em> presents a story of a user
               browsing through YouTube. The user enters YouTube with a simple
               query but eventually ends up in a rabbit hole, while being
@@ -50,12 +50,12 @@ const About = () => {
               <strong>User In The Wondertube</strong>
               is a project developed during the Final Synthesis Laboratory in
               the Density Lab at Politecnico di Milano.
-              <br />
+              <br /> <br />
               This project aims to allow viewers to reflect on the content they
               engage with online, provides insight on how algorithms and data
               gathering works, and thereby gives them the power to self-regulate
               how they browse online.
-              <br />
+              <br /> <br />
               The project focuses on a specific audience of internet consumers
               seeking entertainment or looking for information, tips or advice
               on a subject online. When people log n to the internet for a
@@ -63,7 +63,7 @@ const About = () => {
               uncommon to get lost in the vast array of resources available
               online. One of the strongest sources that draws internet consumers
               in is content farms.
-              <br />
+              <br /> <br />
               <em>User In The Wondertube</em> presents a This project aims to
               present how content farms work in conjunction with algorithms, and
               the specific points at which content farms monetise on the user
@@ -79,7 +79,7 @@ const About = () => {
               and then falling down a rabbit hole is more common than we think.
               Platforms such as YouTube benefit solely from the user spending
               maximum time on them and such rabbit holes help them thrive.
-              <br />
+              <br /> <br />
               When a user’s online behaviour is passive, the online content they
               see is solely governed by the online entities, such as the online
               platforms and algorithms. Understanding how these entities work
@@ -95,14 +95,14 @@ const About = () => {
               different entities: the user, the company/creator of the channel
               being browsed, and the algorithm of YouTube, Facebook and
               Instagram.
-              <br />
+              <br /> <br />
               The user journey is divided into different chapters. The user
               faces a problem in his life (he burns his hand and needs
               first-aid) and wants to look up a solution on YouTube. The user
               journey then begins as he types in his first query on YouTube. As
               the journey progresses of him browsing YouTube, all three entities
               record their observations in the Chat form.
-              <br />
+              <br /> <br />
               The user progressively goes down a rabbit hole through his
               journey. He begins from an objective query and ends up in
               unrelated videos. The viewer is able to see how the algorithm
