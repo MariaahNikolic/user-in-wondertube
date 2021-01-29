@@ -3,8 +3,12 @@ import { Row, Col } from "react-flexbox-grid";
 
 const TipsEnd = () => {
   return (
-    <Row>
-      <h2>HURRAY! YOU ESCAPED THE RABBIT HOLE</h2>
+    <Row id="tips-end" className="section-cover">
+      <h2>
+        <span>HURRAY!</span>
+        <br />
+        YOU ESCAPED THE RABBIT HOLE
+      </h2>
     </Row>
   );
 };

@@ -1,0 +1,14 @@
+#about-page {
+  margin: 0 auto;
+  color: $black;
+  margin: 0 60px;
+  justify-content: center;
+
+  .about-page-content {
+    background-color: $white;
+    border-radius: 30px;
+    padding: 24px;
+    position: relative;
+    margin: 60px;
+  }
+}

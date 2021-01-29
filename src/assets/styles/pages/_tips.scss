@@ -1,0 +1,44 @@
+.tips-page {
+  min-height: inherit;
+
+  .tip {
+    min-height: inherit;
+
+    .tips-window {
+      background-color: $white;
+      color: $black;
+      padding: 80px 36px 24px 36px;
+      border-radius: 30px;
+      position: relative;
+      overflow: hidden;
+      margin: 64px 0;
+      height: 556px;
+
+      .tips-window-header {
+        height: 56px;
+        background-color: $main-blue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        img {
+          margin: 18px 36px;
+        }
+      }
+    }
+
+    .arrows {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}
+
+#tips-end {
+  span {
+    color: $main-red;
+  }
+}

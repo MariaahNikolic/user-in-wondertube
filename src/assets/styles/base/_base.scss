@@ -2,5 +2,23 @@
 
 .content {
     background-image: url('../images/background1.png');
+    background-size: cover;
     color: $white;
+    min-height: calc(100vh - 56px);
+
+    @include tablet {
+        min-height: 300px; 
+    }
+}
+
+.section-cover {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: inherit;
+}
+
+img {
+    max-width: 100%;
 }

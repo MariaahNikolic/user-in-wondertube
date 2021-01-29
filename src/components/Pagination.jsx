@@ -1,26 +1,18 @@
 import React from "react";
-import { Row, Col } from "react-flexbox-grid";
+import { Row } from "react-flexbox-grid";
+import { NavLink } from "react-router-dom";
 
-const Pagination = ({ perPage, totalPosts, paginate }) => {
-  const pageNumbers = [];
-
-  for (let i = 1; i <= Math.ceil(totalPosts / perPage); i++) {
-    pageNumbers.push(i);
-  }
-
+const Pagination = ({ object }) => {
   return (
     <Row className="pagination">
-      {pageNumbers.map(number => (
-        <Col key={number}>
-          <a
-            href="#"
-            onClick={() => {
-              paginate(number);
-            }}
-          >
-            {number}
-          </a>
-        </Col>
+      {object.map((number) => (
+        <NavLink
+        className="pagination-indicator"
+        activeClassName="active"
+          key={number}
+          to={`/tips/${number.id}`}
+        >
+        </NavLink>
       ))}
     </Row>
   );
