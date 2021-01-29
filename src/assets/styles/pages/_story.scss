@@ -46,4 +46,21 @@
   .hide {
     display: none;
   }
+
+  #separator1,
+  #separator2,
+  #separator3 {
+    width: 20px;
+    height: 20px;
+    background-color: $black;
+    position: absolute;
+    top: 15px;
+  }
+
+  #separator1 {
+    left: 57.5%;
+  }
+  #separator2 {
+    left: 81%;
+  }
 }

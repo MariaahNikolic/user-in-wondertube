@@ -1,15 +1,16 @@
 import React from "react";
 import { Row, Col, Grid } from "react-flexbox-grid";
-import Pagination from "../Pagination";
-import { useHistory, Link } from "react-router-dom";
-import tips from "../../data/tips.json";
+import Pagination from "../../Pagination";
+import { useHistory } from "react-router-dom";
+import tips from "../../../data/tips.json";
+import TipsCover from './TipsCover'
 
 const Tips = ({ match }) => {
   const history = useHistory();
   const param = Number(match.params.id);
 
   const nextTip = (id) => {
-    history.push(`/tips/${id + 1}`);
+    history.push(id !== tips.length ? `/tips/${id + 1}` : `/finished` );
   };
 
   const prevTip = (id) => {
@@ -21,9 +22,10 @@ const Tips = ({ match }) => {
       <Grid>
         <Row>
           {param ? (
-              tips.map(
-                (tip) =>
+            tips.map(
+              (tip) =>
                 param === tip.id && (
+
                   <Col key={tip.id}>
                     <Row>
                       <Col xs={12} sm={12} md={4} lg={4}>
@@ -34,29 +36,16 @@ const Tips = ({ match }) => {
                         <a onClick={() => nextTip(tip.id)}>Next</a>
 
                         {/* <Pagination /> */}
-                        </Col>
+                      </Col>
                       <Col xs={12} sm={12} md={8} lg={8}>
-                        <img src={`./images/${tip.image}`} />
+                        <img src={`/images/tips/${tip.image}`} />
                       </Col>
                     </Row>
                   </Col>
                 )
             )
           ) : (
-            // Intro page for chapter 4
-            <Col xs={12} sm={12} md={8} lg={8}>
-              <p>Chapter 4</p>
-              <h2>Tips for users</h2>
-              <p>
-                It’s tricky to always filter content online. But don’t worry!
-                Here are some steps you can take to navigate through content you
-                like and prevent falling down a rabbit hole.
-              </p>
-              <Link to="/tips/1">
-                LINK
-                <img src="" />
-              </Link>
-            </Col>
+            <TipsCover />
           )}
         </Row>
       </Grid>

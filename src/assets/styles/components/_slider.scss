@@ -2,13 +2,13 @@
 $slider-width-number: 1600;
 $slider-width: $slider-width-number + px;
 $slider-height: 6px;
-$background-slider: #c7c7c7;
-$background-filled-slider: #e33d44;
+$background-slider: $light-gray;
+$background-filled-slider: $main-red;
 $thumb-width: 18px;
 $thumb-height: 18px;
 $thumb-radius: 8px;
-$thumb-background: #fff;
-$thumb-border: 1px solid #777;
+$thumb-background: $white;
+$thumb-border: 1px solid $normal-gray;
 $shadow-size: -6.5px;
 $fit-thumb-in-slider: -6.5px;
 

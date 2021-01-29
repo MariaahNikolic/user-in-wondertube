@@ -3,25 +3,22 @@ import { Row, Col } from "react-flexbox-grid";
 import ReactPlayer from "react-player";
 
 const Tips = () => {
-  const [progress, setProgress] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [progressTracking, setProgressTracking] = useState(0);
   const player = useRef();
-  const bar = document.getElementById("progress-bar");
+  const bar = document.getElementById('progress-bar'); 
 
   useEffect(() => {
-    //document.getElementById("progress-bar").value = (player.current.getCurrentTime() / player.current.getDuration()) * 100;
-    setProgress(
-      (player.current.getCurrentTime() / player.current.getDuration()) * 100
-    );
+      if (bar) {
+        bar.value = (player.current.getCurrentTime() / player.current.getDuration()) * 100
+      }
+
   }, [progressTracking]);
 
-  bar &&
-    bar.addEventListener("mouseup", (e) => {
-      player.current.seekTo(
+   bar && bar.addEventListener('mouseup', e => {
+    player.current.seekTo(
         player.current.getDuration() * (parseFloat(e.target.value) / 100)
-      );
-    });
+    )});
 
   return (
     <Row id="story-page">
@@ -30,9 +27,8 @@ const Tips = () => {
           <ReactPlayer
             playing={!isPaused}
             ref={player}
-            controls={true}
             id={"react-player"}
-            url={"https://vimeo.com/503084410"}
+            url={"https://vimeo.com/506071868"}
             onProgress={(loadedSeconds) => {
               setProgressTracking(loadedSeconds);
             }}
@@ -41,15 +37,12 @@ const Tips = () => {
         </div>
       </Col>
       <Col xl={12} sm={12} className="progress-bar-wrapper">
+          <div id="separator1" />
+          <div id="separator2" />
         <input
           type="range"
           id={"progress-bar"}
-          defaultValue={0}
-          min="1"
-          max="100"
-          onChange={() => {
-            setProgressTracking(progress);
-          }}
+          min="1" max="100"
         />
       </Col>
       <div md={2} className="controls">

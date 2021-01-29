@@ -1,7 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Tips from "./components/view/Tips";
+import Tips from "./components/view/tips/Tips";
+import TipsEnd from "./components/view/tips/TipsEnd";
 import Intro from "./components/view/intro/Intro";
 import Story from "./components/view/Story";
 import Home from "./components/view/Home";
@@ -23,6 +24,9 @@ const App = () => {
               <Route path="/tips/:id?" render={(props) => {
                     return ( <Tips {...props } /> )
                 }}>
+              </Route>
+              <Route path="/finished">
+                <TipsEnd />
               </Route>
               <Route path="/intro">
                 <Intro />

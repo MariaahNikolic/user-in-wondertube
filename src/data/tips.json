@@ -1,12 +1,61 @@
 [
   {
     "id": 1,
-    "content": "If there are unnecessary video recommendations, the viewer can click on the three-dot icon and select 'Not interested' to only remove that particular video or 'Don't recommend channel' to remove all further video suggestions from the recommended videos section.",
+    "content": "Get browser extensions to remove irrelevant Youtube recommendations.",
     "image": "tip-1.png"
   },
   {
     "id": 2,
     "content": "Block third-parties cookies on your social media to stop advertisers from tracking your every move. Save battery life and data by keeping your browsing private.",
     "image": "tip-2.png"
+  },
+  {
+    "id": 3,
+    "content": "Youtube is a great place to start, but not only rely on youtube for all your information. Find other sources of information.",
+    "image": "tip-3.png"
+  },
+  {
+    "id": 4,
+    "content": "Be super specific with your search keywords to get relevant information.",
+    "image": "tip-4.png"
+  },  {
+    "id": 5,
+    "content": "Watch out and recognize the odd and unrelated search results",
+    "image": "tip-5.png"
+  },
+  {
+    "id": 6,
+    "content": "Thumbnails and titles can be alluring to click but reposting old content doesn’t mean they’re relevant to current events. So beware of old and repetitive content.",
+    "image": "tip-6.png"
+  },
+  {
+    "id": 7,
+    "content": "Check the comments to understand whether the content is worth-watching.",
+    "image": "tip-7.png"
+  },
+  {
+    "id": 8,
+    "content": "If there are unnecessary video recommendations, the viewer can click on the three-dot icon and select 'Not interested' to only remove that particular video or 'Don't recommend channel' to remove all further video suggestions from the recommended videos section.",
+    "image": "tip-8.png"
+  },
+  {
+    "id": 9,
+    "content": "It takes time and effort to create genuine  content, and a constant support to keep generating new ones. So, be sure to figure out where this support is coming from and why.",
+    "image": "tip-9.png"
+  },
+  {
+    "id": 10,
+    "content": "Youtube suggests content according to their algorithm and there's no accountability to anyone. It falls on the viewer to try and fact check a video for how credible it actually is because generally if something is too good to be true, it actually is.",
+    "image": "tip-10.png"
+  },
+  {
+    "id": 11,
+    "content": "If the content seems inappropriate, click on the bottom right, three dot, and report the video.",
+    "image": "tip-11.png"
+  },
+  {
+    "id": 12,
+    "content": "Delete your Youtube profile’s search and watch history.",
+    "image": "tip-12.png"
   }
-]
+  ]
