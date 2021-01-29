@@ -1,122 +1,67 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Row, Col } from "react-flexbox-grid";
 import ReactPlayer from "react-player";
-import useDynamicRefs from "use-dynamic-refs";
-import { Link } from "react-router-dom";
-import videos from "../../data/videos.json";
 
 const Tips = () => {
-  const [currentVideo, setCurrentVideo] = useState(0);
-  const [progress, setProgress] = useState({
-    0: 0,
-    1: 0,
-    2: 0,
-    
-  });
-  const [getVideoRef, setVideoRef] = useDynamicRefs();
-  const [trigger, setTrigger] = useState(false);
-  const [barValue, setBarValue] = useState();
+  const [progress, setProgress] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [progressTracking, setProgressTracking] = useState(0);
+  const player = useRef();
+  const bar = document.getElementById("progress-bar");
 
   useEffect(() => {
-    setNewTime(currentVideo);
-  }, [trigger]);
+    //document.getElementById("progress-bar").value = (player.current.getCurrentTime() / player.current.getDuration()) * 100;
+    setProgress(
+      (player.current.getCurrentTime() / player.current.getDuration()) * 100
+    );
+  }, [progressTracking]);
 
-  const setNewTime = (id) => {
-    let player = getVideoRef(`player_${id}`);
-
-    if (player) {
-      if (player.current) {
-        const progressPercentage =
-          (player.current.getCurrentTime() / player.current.getDuration()) *
-          100;
-        const newTime =
-          player.current.getDuration() * (parseFloat(barValue) / 100);
-        player.current.seekTo(newTime);
-
-        // console.log(
-        //   "progress",
-        //   document.getElementById(`progress-bar-${id}`).value
-        // );
-        // console.log("newTime", newTime);
-        // console.log("============================================");
-
-        setProgress({
-          ...progress,
-          [id]: progressPercentage,
-        });
-      }
-    }
-  };
+  bar &&
+    bar.addEventListener("mouseup", (e) => {
+      player.current.seekTo(
+        player.current.getDuration() * (parseFloat(e.target.value) / 100)
+      );
+    });
 
   return (
-    <div className="story-page">
-      <Row>
-        {videos &&
-          videos.map((video) => (
-            <Col key={video.id} xl={12} sm={12}>
-              <div
-                className="player-wrapper"
-                className={video.id === currentVideo ? "show" : "hide"}
-              >
-                <ReactPlayer
-                  playing={
-                    video.id === currentVideo && !isPaused ? true : false
-                  }
-                  ref={setVideoRef(`player_${video.id}`)}
-                  controls={true}
-                  id={`react-player-${video.id}`}
-                  url={video.src}
-                  //controls={false}
-                />
-              </div>
-            </Col>
-          ))}
-      </Row>
-      <Row className='progress-bar-wrapper'>
-        <Col md={12}>
-          <Row>
-            {videos &&
-              videos.map((video) => (
-                <Col key={video.id} xl={4} sm={4}>
-                    {console.log('kurac', progress)}
-                  <input
-                    type="range"
-                    id={`progress-bar-${video.id}`}
-                    value={progress[video.id]  || 0}
-                    onChange={(e) => {
-                      setCurrentVideo(video.id);
-                      setTrigger(!trigger);
-                      setBarValue(e.currentTarget.value);
-                    }}
-                  />
-                </Col>
-              ))}
-          </Row>    
-        </Col>
-
-        <Col md={12}>
-          <Row>
-            <Col md={2}>
-              <button
-                onClick={() => {
-                  setIsPaused(true);
-                }}
-              >
-                Pause
-              </button>
-              <button
-                onClick={() => {
-                  setIsPaused(false);
-                }}
-              >
-                play
-              </button>
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-    </div>
+    <Row id="story-page">
+      <Col xl={12} sm={12}>
+        <div className="player-wrapper">
+          <ReactPlayer
+            playing={!isPaused}
+            ref={player}
+            controls={true}
+            id={"react-player"}
+            url={"https://vimeo.com/503084410"}
+            onProgress={(loadedSeconds) => {
+              setProgressTracking(loadedSeconds);
+            }}
+            controls={false}
+          />
+        </div>
+      </Col>
+      <Col xl={12} sm={12} className="progress-bar-wrapper">
+        <input
+          type="range"
+          id={"progress-bar"}
+          defaultValue={0}
+          min="1"
+          max="100"
+          onChange={() => {
+            setProgressTracking(progress);
+          }}
+        />
+      </Col>
+      <div md={2} className="controls">
+        <button
+          onClick={() => {
+            setIsPaused(!isPaused);
+          }}
+        >
+          {isPaused ? "Play" : "Pause"}
+        </button>
+      </div>
+    </Row>
   );
 };
 

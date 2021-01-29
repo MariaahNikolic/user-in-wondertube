@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Tips from "./components/view/Tips";
 import Intro from "./components/view/intro/Intro";
 import Story from "./components/view/Story";
+import Home from "./components/view/Home";
+import Footer from "./components/layout/Footer";
 import "./assets/styles/styles.scss";
 
 const App = () => {
@@ -28,12 +30,12 @@ const App = () => {
               <Route path="/story">
                 <Story />
               </Route>
-              {/* <Route path="/">
+              <Route path="/">
                 <Home />
-              </Route> */}
+              </Route>
             </Switch>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </>
   );

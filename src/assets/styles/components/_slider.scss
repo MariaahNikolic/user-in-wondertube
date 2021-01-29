@@ -1,7 +1,7 @@
 
-$slider-width-number: 660;
+$slider-width-number: 1600;
 $slider-width: $slider-width-number + px;
-$slider-height: 2px;
+$slider-height: 6px;
 $background-slider: #c7c7c7;
 $background-filled-slider: #e33d44;
 $thumb-width: 18px;
@@ -9,8 +9,8 @@ $thumb-height: 18px;
 $thumb-radius: 8px;
 $thumb-background: #fff;
 $thumb-border: 1px solid #777;
-$shadow-size: -8px;
-$fit-thumb-in-slider: -8px;
+$shadow-size: -6.5px;
+$fit-thumb-in-slider: -6.5px;
 
 @function makelongshadow($color, $size) {
   $val: 5px 0 0 $size $color;
