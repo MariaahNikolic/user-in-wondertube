@@ -5,7 +5,7 @@ import Button from "../../Button";
 
 const Intro = () => {
   return (
-    <div className="intro-page">
+    <div className="intro-page intro-cover">
       <Row middle="lg" className="section-cover">
         <Col xs={12} sm={6} md={6} lg={6}>
           <div className="intro-text body-1 yellow-background">
@@ -38,7 +38,6 @@ const Intro = () => {
           <div className="intro-title">
             <img src="/images/title.svg" />
           </div>
-
           <Button src="/intro/1" />
         </Col>
       </Row>

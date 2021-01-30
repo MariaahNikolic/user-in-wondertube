@@ -16,9 +16,8 @@ const Intro = ({ match }) => {
   const prevTip = (id) => {
     history.push(`/intro/${id - 1}`);
   };
-
   return param ? (
-    <div className="intro-page">
+    <div className={`intro-page ${param === 1 && 'content-farms'}`}>
       {introPages.map(
         (page) =>
           param === page.id && (
@@ -31,7 +30,7 @@ const Intro = ({ match }) => {
                 )}
               </Col>
               <Col sm={10} xl={10} className="intro-content">
-                <Row center="xl" center="xs">
+                <Row center="xl" center="xs" className='space-background'>
                   <Col>
                     {page.text1 && <p className="heading-md">{page.text1}</p>}
                     {page.bigText && (

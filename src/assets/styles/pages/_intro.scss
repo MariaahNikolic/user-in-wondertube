@@ -1,6 +1,27 @@
 .intro-page {
   min-height: inherit;
 
+  &.content-farms,
+  &.intro-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: inherit;
+  }
+
+  &.intro-cover {
+  background-image: url("../../images/background2.png");
+  }
+
+  &.content-farms {
+    background-image: url("../../images/background3.png");
+
+    .space-background {
+      background-image: url("../../images/background1.png");
+      border-radius: 30px;
+      padding: 36px;
+    }
+  }
+
   .intro-content {
     min-height: inherit;
     display: flex;
