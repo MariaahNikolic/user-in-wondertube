@@ -10,76 +10,70 @@ const Intro = ({ match }) => {
   const param = Number(match.params.id);
 
   const nextTip = (id) => {
-    history.push(
-      id !== introPages.length ? `/intro/${id + 1}` : `/story`
-    );
+    history.push(id !== introPages.length ? `/intro/${id + 1}` : `/story`);
   };
 
   const prevTip = (id) => {
     history.push(`/intro/${id - 1}`);
   };
 
-  return (
+  return param ? (
     <div className="intro-page">
-      {param ? (
-        <>
-          {introPages.map(
-            (page) =>
-              param === page.id && (
-                <Row key={page.id} className="intro-page">
-                  <Col sm={1} xl={1} className="arrows">
-                    {page.id > 1 && (
-                      <a onClick={() => prevTip(page.id)}>
-                        <img src="/images/icons/arrow-left.svg" />
-                      </a>
+      {introPages.map(
+        (page) =>
+          param === page.id && (
+            <Row key={page.id} className="intro-page">
+              <Col sm={1} xl={1} className="arrows">
+                {page.id > 1 && (
+                  <a onClick={() => prevTip(page.id)}>
+                    <img src="/images/icons/arrow-left.svg" />
+                  </a>
+                )}
+              </Col>
+              <Col sm={10} xl={10} className="intro-content">
+                <Row center="xl" center="xs">
+                  <Col>
+                    {page.text1 && <p className="heading-md">{page.text1}</p>}
+                    {page.bigText && (
+                      <h1 className="heading-xl yellow-background">
+                        {page.bigText}
+                      </h1>
+                    )}
+                    {page.text2 && <p className="heading-md">{page.text2}</p>}
+                    {page.mediumText && (
+                      <h3 className="heading-lg">
+                        {page.mediumText}{" "}
+                        <span className="yellow-accent">{page.accent}</span>
+                        {page.mediumText2 && page.mediumText2}
+                      </h3>
+                    )}
+                    {page.id === 6 && (
+                      <div className="credits">
+                        <h1 className="heading-xl yellow-background">
+                          STARRING
+                        </h1>
+                        <div className="credits-actors">
+                          <img src="/images/chat.png" />
+                        </div>
+                      </div>
                     )}
                   </Col>
-                  <Col sm={10} xl={10} className="intro-content">
-                    <Row center="xl" center="xs">
-                      <Col>
-                        {page.text1 && (
-                          <p className="heading-md">{page.text1}</p>
-                        )}
-                        {page.bigText && (
-                          <h1 className="heading-xl yellow-background">{page.bigText}</h1>
-                        )}
-                        {page.text2 && (
-                          <p className="heading-md">{page.text2}</p>
-                        )}
-                        {page.mediumText && (
-                          <h3 className="heading-lg">
-                            {page.mediumText}{" "}
-                            <span className="yellow-accent">{page.accent}</span>
-                            {page.mediumText2 && page.mediumText2}
-                          </h3>
-                        )}
-                        {page.id === 6 && (
-                          <div className="credits">
-                              <h1 className="heading-xl yellow-background">STARRING</h1>
-                              <div className="credits-actors">
-                                <img src="/images/chat.png" />
-                              </div>
-                          </div>
-                        )}
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col sm={1} xl={1} className="arrows">
-                    <a onClick={() => nextTip(page.id)}>
-                      <img src="/images/icons/arrow-right.svg" />
-                    </a>
-                  </Col>
                 </Row>
-              )
-          )}
-
-          {/* PAGINATION */}
-          <Pagination object={introPages} path="intro"/>
-        </>
-      ) : (
-        <IntroCover />
+              </Col>
+              <Col sm={1} xl={1} className="arrows">
+                <a onClick={() => nextTip(page.id)}>
+                  <img src="/images/icons/arrow-right.svg" />
+                </a>
+              </Col>
+            </Row>
+          )
       )}
+
+      {/* PAGINATION */}
+      <Pagination object={introPages} path="intro" />
     </div>
+  ) : (
+    <IntroCover />
   );
 };
 

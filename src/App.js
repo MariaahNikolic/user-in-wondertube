@@ -31,7 +31,6 @@ const App = () => {
             <Route path="/tips-finished">
               <TipsEnd />
             </Route>
-
             <Route
               path="/intro/:id?"
               render={(props) => {
