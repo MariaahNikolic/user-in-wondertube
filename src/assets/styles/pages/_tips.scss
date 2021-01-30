@@ -40,3 +40,12 @@
     color: $main-red;
   }
 }
+
+.tips-image {
+  min-width: 670px;
+
+  @include desktop {
+    min-width: auto;
+
+  }
+}

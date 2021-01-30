@@ -37,12 +37,12 @@ const Tips = ({ match }) => {
                       <Col xs={12} xl={12} className="tips-window-header">
                         <img src="/images/icons/dots.svg" />
                       </Col>
-                      <Col xs={12} sm={12} md={8} lg={8}>
+                      <Col xs={12} sm={12} md={8} lg={8} className="tips-image">
                         <img src={`/images/tips/${tip.image}`} />
                       </Col>
                       <Col xs={12} sm={12} md={4} lg={4}>
-                        <h2>{tip.id}</h2>
-                        <p>{tip.content}</p>
+                        <h2 className='heading-xl-light'>{tip.id < 10 ? `0${tip.id}` : tip.id}</h2>
+                        <p className="body-2">{tip.content}</p>
                       </Col>
                     </Row>
                   </Col>

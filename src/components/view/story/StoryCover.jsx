@@ -6,7 +6,7 @@ const StoryCover = () => {
   return (
     <Row className="section-cover">
       <Col xl={4} sm={6}>
-        <h1 className="heading-xl">START!</h1>
+        <h2 className="heading-xl">START!</h2>
         <Button param='video' />
         <strong className="yellow-accent">DISCLAIMER</strong>
         <p className="small">

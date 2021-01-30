@@ -15,7 +15,7 @@ const App = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Mariah's web marketplace</title>
+        <title>User in Wondertube</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <Router>

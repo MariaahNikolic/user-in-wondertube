@@ -35,9 +35,9 @@ const Intro = ({ match }) => {
                   <Col>
                     {page.text1 && <p className="heading-md">{page.text1}</p>}
                     {page.bigText && (
-                      <h1 className="heading-xl yellow-background">
+                      <h2 className="heading-xl yellow-background">
                         {page.bigText}
-                      </h1>
+                      </h2>
                     )}
                     {page.text2 && <p className="heading-md">{page.text2}</p>}
                     {page.mediumText && (
@@ -49,9 +49,9 @@ const Intro = ({ match }) => {
                     )}
                     {page.id === 6 && (
                       <div className="credits">
-                        <h1 className="heading-xl yellow-background">
+                        <h2 className="heading-xl yellow-background">
                           STARRING
-                        </h1>
+                        </h2>
                         <div className="credits-actors">
                           <img src="/images/chat.png" />
                         </div>

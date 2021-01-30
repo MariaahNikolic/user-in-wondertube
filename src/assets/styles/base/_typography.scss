@@ -2,7 +2,12 @@
     font-size: 3.25rem;
     font-weight: 600;
     font-style: italic;
-    display: inline;
+}
+
+.heading-xl-light {
+  font-size: 4.5rem;
+  font-weight: 200;
+  margin: 0;
 }
 
 .heading-lg {
@@ -15,14 +20,14 @@
     font-weight: 500;
 }
 
-  
+.body-2 {
+  font-size: 1.625rem;
+  font-weight: 300;
+}
+
 .body-1 {
     font-size: 1.125rem;
     font-weight: 500;
-  }
-
-.body {
-  font-size: 1rem;
 }
 
 .small {

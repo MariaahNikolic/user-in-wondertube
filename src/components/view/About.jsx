@@ -9,9 +9,9 @@ const About = () => {
         <Row className="about-page-content">
         <Col xl={12} className='close-button'><Link to="/intro"><img src="/images/icons/close.svg"/></Link></Col>
           <Col lg={12}>
-            <h2>ABOUT</h2>
+            <h2 className="heading-lg yellow-background">ABOUT</h2>
             <p>
-              <strong>User In The Wondertube</strong>
+              <strong>User In The Wondertube </strong>
               is a project developed during the Final Synthesis Laboratory in
               the Density Lab at Politecnico di Milano.
               <br /> <br />
@@ -47,7 +47,7 @@ const About = () => {
             </p>
           </Col>
           <Col>
-            <h2>AIM, FOCUS & OBJECTIVE</h2>
+            <h2 className="heading-lg yellow-background">AIM, FOCUS & OBJECTIVE</h2>
             <p>
               <strong>User In The Wondertube</strong>
               is a project developed during the Final Synthesis Laboratory in
@@ -75,7 +75,7 @@ const About = () => {
           </Col>
 
           <Col>
-            <h2>MESSAGE</h2>
+            <h2 className="heading-lg yellow-background">MESSAGE</h2>
             <p>
               The psychology of giving content farms the benefit of the doubt
               and then falling down a rabbit hole is more common than we think.
@@ -89,7 +89,7 @@ const About = () => {
             </p>
           </Col>
           <Col>
-            <h2>INTERACTION</h2>
+            <h2 className="heading-lg yellow-background">INTERACTION</h2>
             <p>
               The interface consists of a user journey in the form of a screen
               recording of a user browsing YouTube. Below the screen recording,
@@ -113,7 +113,7 @@ const About = () => {
             </p>
           </Col>
           <Col>
-            <h3>Sources:</h3>
+            <h3><strong>Sources:</strong></h3>
             <p>
               Michael Boccacino. “Building Successful Multi-Channel Social Media
               Strategies during COVID-19.” NewDigitalAge, June 11, 2020.
