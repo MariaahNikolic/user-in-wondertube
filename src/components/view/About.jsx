@@ -1,12 +1,14 @@
 import React from "react";
 import { Row, Col } from "react-flexbox-grid";
+import {Link} from "react-router-dom";
 
 const About = () => {
   return (
     <Row id="about-page">
-      <Col xl={6} lg={8} md={12}>
+      <Col xl={8} lg={10} md={12}>
         <Row className="about-page-content">
-          <Col>
+        <Col xl={12} className='close-button'><Link to="/intro"><img src="/images/icons/close.svg"/></Link></Col>
+          <Col lg={12}>
             <h2>ABOUT</h2>
             <p>
               <strong>User In The Wondertube</strong>

@@ -1,8 +1,13 @@
 .tips-page {
   min-height: inherit;
 
-  .tip {
+  .tip,
+  .tips-window-wrapper {
     min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 
     .tips-window {
       background-color: $white;
@@ -26,13 +31,6 @@
           margin: 18px 36px;
         }
       }
-    }
-
-    .arrows {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
     }
   }
 }

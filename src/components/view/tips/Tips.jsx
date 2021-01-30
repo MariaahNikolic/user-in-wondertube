@@ -32,7 +32,7 @@ const Tips = ({ match }) => {
                       </a>
                     )}
                   </Col>
-                  <Col sm={10} xl={10}>
+                  <Col sm={10} xl={10} className="tips-window-wrapper">
                     <Row className="tips-window">
                       <Col xs={12} xl={12} className="tips-window-header">
                         <img src="/images/icons/dots.svg" />
@@ -56,7 +56,7 @@ const Tips = ({ match }) => {
           )}
 
           {/* PAGINATION */}
-          <Pagination object={tips} />
+          <Pagination object={tips} path="tips" />
         </>
       ) : (
         <TipsCover />

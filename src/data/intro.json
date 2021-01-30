@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "text1": "There are many entities that maximise the use of algorithms, but one of them is content farms",
+    "text2": "are companies that produce a large volume of content with the main aim of maximizing profits.",
+    "bigText": "CONTENT FARMS",
+    "mediumText": false
+  },
+  {
+    "id": 2,
+    "text1": "Youtube’s algorithm shapes our browsing decisions, but its impact extends to other popular",
+    "text2": "They track our choices and make recommendations based on them.",
+    "bigText": "SOCIAL PLATFORMS.",
+    "mediumText": false
+  },
+  {
+    "id": 3,
+    "text1": false,
+    "text2": false,
+    "bigText": false,
+    "accent":  "our story...",
+    "mediumText": "Now onto"
+  },
+  {
+    "id": 4,
+    "text1": false,
+    "text2": false,
+    "bigText": false,
+    "accent":  "user ",
+    "mediumText": "It’s a normal day in 2021 and a",
+    "mediumText2": "is planning to have some dinner."
+
+  },
+  {
+    "id": 5,
+    "text1": false,
+    "text2": false,
+    "bigText": false,
+    "accent":  "But does our user have the right questions? ",
+    "mediumText": "YouTube usually has answers.",
+    "mediumText2": false
+
+  },
+  {
+    "id": 6,
+    "text1": false,
+    "text2": false,
+    "bigText": false,
+    "mediumText": false,
+    "mediumText2": false
+
+  }
+]

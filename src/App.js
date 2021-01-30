@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Tips from "./components/view/tips/Tips";
 import TipsEnd from "./components/view/tips/TipsEnd";
 import Intro from "./components/view/intro/Intro";
-import IntroEnd from "./components/view/intro/IntroEnd";
-import Story from "./components/view/Story";
+import IntroCover from "./components/view/intro/IntroCover";
+import Story from "./components/view/story/Story";
 import About from "./components/view/About";
 import Footer from "./components/layout/Footer";
 import "./assets/styles/styles.scss";
@@ -38,15 +38,18 @@ const App = () => {
                 return <Intro {...props} />;
               }}
             ></Route>
-            <Route path="/intro-finished">
-              <IntroEnd />
-            </Route>
-
-            <Route path="/story">
-              <Story />
+          
+            <Route
+              path="/story/:video?"
+              render={(props) => {
+                return <Story {...props} />;
+              }}
+            ></Route>
+            <Route path="/about">
+              <About />
             </Route>
             <Route path="/">
-              <About />
+              <IntroCover />
             </Route>
           </Switch>
         </div>

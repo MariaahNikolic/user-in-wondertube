@@ -1,24 +1,73 @@
-
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 .content {
-    background-image: url('../images/background1.png');
-    background-size: cover;
-    color: $white;
-    min-height: calc(100vh - 56px);
+  background-image: url("../images/background1.png");
+  background-size: cover;
+  color: $white;
+  min-height: calc(100vh - 56px);
+  background-repeat: repeat;
 
-    @include tablet {
-        min-height: 300px; 
-    }
+  @include tablet {
+    min-height: 300px;
+  }
 }
 
 .section-cover {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    min-height: inherit;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  min-height: inherit;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
+}
+
+.button {
+  display: block;
+  margin: 24px auto;
+}
+
+.button-2 {
+  background-color: $black;
+  color: $white;
+  padding: 16px;
+  display: inline-block;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.yellow-accent {
+  color: $main-yellow
+}
+
+.red-accent {
+  color: $main-red;
+}
+
+.yellow-background {
+  background-color: $main-yellow;
+  color: $black;
 }

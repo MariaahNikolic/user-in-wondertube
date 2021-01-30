@@ -2,7 +2,7 @@ import React from "react";
 import { Row } from "react-flexbox-grid";
 import { NavLink } from "react-router-dom";
 
-const Pagination = ({ object }) => {
+const Pagination = ({ object, path }) => {
   return (
     <Row className="pagination">
       {object.map((number) => (
@@ -10,7 +10,7 @@ const Pagination = ({ object }) => {
         className="pagination-indicator"
         activeClassName="active"
           key={number}
-          to={`/tips/${number.id}`}
+          to={`/${path}/${number.id}`}
         >
         </NavLink>
       ))}

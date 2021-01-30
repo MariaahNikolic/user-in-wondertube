@@ -1,17 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import IntroCover from "./IntroCover";
 import { Row, Col } from "react-flexbox-grid";
 import Pagination from "../../Pagination";
 import { useHistory } from "react-router-dom";
-import tips from "../../../data/tips.json";
+import introPages from "../../../data/intro.json";
 
 const Intro = ({ match }) => {
   const history = useHistory();
   const param = Number(match.params.id);
 
   const nextTip = (id) => {
-    history.push(id !== tips.length ? `/tips/${id + 1}` : `/tips-finished`);
+    history.push(
+      id !== introPages.length ? `/intro/${id + 1}` : `/story`
+    );
   };
 
   const prevTip = (id) => {
@@ -22,33 +23,49 @@ const Intro = ({ match }) => {
     <div className="intro-page">
       {param ? (
         <>
-          {tips.map(
-            (tip) =>
-              param === tip.id && (
-                <Row key={tip.id} className='tip'>
+          {introPages.map(
+            (page) =>
+              param === page.id && (
+                <Row key={page.id} className="intro-page">
                   <Col sm={1} xl={1} className="arrows">
-                    {tip.id > 1 && (
-                      <a onClick={() => prevTip(tip.id)}>
+                    {page.id > 1 && (
+                      <a onClick={() => prevTip(page.id)}>
                         <img src="/images/icons/arrow-left.svg" />
                       </a>
                     )}
                   </Col>
-                  <Col sm={10} xl={10}>
-                    <Row className="tips-window">
-                      <Col xs={12} xl={12} className="tips-window-header">
-                        <img src="/images/icons/dots.svg" />
-                      </Col>
-                      <Col xs={12} sm={12} md={8} lg={8}>
-                        <img src={`/images/tips/${tip.image}`} />
-                      </Col>
-                      <Col xs={12} sm={12} md={4} lg={4}>
-                        <h2>{tip.id}</h2>
-                        <p>{tip.content}</p>
+                  <Col sm={10} xl={10} className="intro-content">
+                    <Row center="xl" center="xs">
+                      <Col>
+                        {page.text1 && (
+                          <p className="heading-md">{page.text1}</p>
+                        )}
+                        {page.bigText && (
+                          <h1 className="heading-xl yellow-background">{page.bigText}</h1>
+                        )}
+                        {page.text2 && (
+                          <p className="heading-md">{page.text2}</p>
+                        )}
+                        {page.mediumText && (
+                          <h3 className="heading-lg">
+                            {page.mediumText}{" "}
+                            <span className="yellow-accent">{page.accent}</span>
+                            {page.mediumText2 && page.mediumText2}
+                          </h3>
+                        )}
+                        {page.id === 6 && (
+                          <div className="credits">
+                              <h1 className="heading-xl yellow-background">STARRING</h1>
+                              <div className="credits-actors">
+                                <img src="/images/chat.png" />
+                              </div>
+                          </div>
+                        )}
                       </Col>
                     </Row>
                   </Col>
                   <Col sm={1} xl={1} className="arrows">
-                    <a onClick={() => nextTip(tip.id)}>
+                    <a onClick={() => nextTip(page.id)}>
                       <img src="/images/icons/arrow-right.svg" />
                     </a>
                   </Col>
@@ -57,7 +74,7 @@ const Intro = ({ match }) => {
           )}
 
           {/* PAGINATION */}
-          <Pagination object={tips} />
+          <Pagination object={introPages} path="intro"/>
         </>
       ) : (
         <IntroCover />
