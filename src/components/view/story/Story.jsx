@@ -38,7 +38,7 @@ const Story = ({ match }) => {
             playing={!isPaused}
             ref={player}
             id={"react-player"}
-            url={"https://vimeo.com/506071868"}
+            url={"https://vimeo.com/506571069"}
             onProgress={(loadedSeconds) => {
               setProgressTracking(loadedSeconds);
             }}
