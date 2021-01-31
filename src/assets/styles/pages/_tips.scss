@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
     .tips-window {
       background-color: $white;
@@ -42,10 +41,9 @@
 }
 
 .tips-image {
-  min-width: 670px;
+  margin-top: 24px;
+}
 
-  @include desktop {
-    min-width: auto;
-
-  }
+.tip-content {
+  max-width: 500px;
 }

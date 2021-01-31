@@ -3,6 +3,7 @@ import { Row, Col } from "react-flexbox-grid";
 import ReactPlayer from "react-player";
 import StoryCover from "./StoryCover";
 import { useHistory } from "react-router-dom";
+import Footer from "../../layout/Footer";
 
 const Story = ({ match }) => {
   const param = match.params.video;
@@ -30,7 +31,7 @@ const Story = ({ match }) => {
     history.push("/tips");
   };
 
-  return param ? (
+  return param === "video" ? (
     <Row id="story-page">
       <Col xl={12} sm={12}>
         <div className="player-wrapper">
@@ -50,7 +51,7 @@ const Story = ({ match }) => {
       <Col xl={12} sm={12} className="progress-bar-wrapper">
         <div id="separator1" />
         <div id="separator2" />
-        <input type="range" id={"progress-bar"} min="1" max="100" />
+        <input type="range" id={"progress-bar"} min="0" max="100" />
       </Col>
       <div md={2} className="controls">
         <button
@@ -66,6 +67,7 @@ const Story = ({ match }) => {
           )}
         </button>
       </div>
+      <Footer />
     </Row>
   ) : (
     <StoryCover />

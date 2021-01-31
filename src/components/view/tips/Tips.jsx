@@ -24,7 +24,7 @@ const Tips = ({ match }) => {
           {tips.map(
             (tip) =>
               param === tip.id && (
-                <Row key={tip.id} className='tip'>
+                <Row key={tip.id} className="tip">
                   <Col sm={1} xl={1} className="arrows">
                     {tip.id > 1 && (
                       <a onClick={() => prevTip(tip.id)}>
@@ -37,13 +37,24 @@ const Tips = ({ match }) => {
                       <Col xs={12} xl={12} className="tips-window-header">
                         <img src="/images/icons/dots.svg" />
                       </Col>
-                      <Col xs={12} sm={12} md={8} lg={8} className="tips-image">
-                        <img src={`/images/tips/${tip.image}`} />
-                      </Col>
-                      <Col xs={12} sm={12} md={4} lg={4}>
-                        <h2 className='heading-xl-light'>{tip.id < 10 ? `0${tip.id}` : tip.id}</h2>
-                        <p className="body-2">{tip.content}</p>
-                      </Col>
+                      <Row>
+                        <Col
+                          xs={12}
+                          sm={12}
+                          md={12}
+                          lg={6}
+                          xl={6}
+                          className="tips-image"
+                        >
+                          <img src={`/images/tips/${tip.image}`} />
+                        </Col>
+                        <Col xs={12} sm={12} md={12} lg={6} xl={6}>
+                          <h2 className="heading-xl-light">
+                            {tip.id < 10 ? `0${tip.id}` : tip.id}
+                          </h2>
+                          <p className="body-2 tip-content">{tip.content}</p>
+                        </Col>
+                      </Row>
                     </Row>
                   </Col>
                   <Col sm={1} xl={1} className="arrows">

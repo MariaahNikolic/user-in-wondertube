@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "text1": "There are many entities that maximise the use of algorithms, but one of them is content farms",
+    "text1": "There are many entities that maximise the use of algorithms, but one of them is content farms.",
     "text2": "are companies that produce a large volume of content with the main aim of maximizing profits.",
     "bigText": "CONTENT FARMS",
     "mediumText": false
@@ -18,7 +18,7 @@
     "text1": false,
     "text2": false,
     "bigText": false,
-    "accent":  "our story...",
+    "accent":  " our story...",
     "mediumText": "Now onto"
   },
   {
@@ -26,7 +26,7 @@
     "text1": false,
     "text2": false,
     "bigText": false,
-    "accent":  "user ",
+    "accent":  " user ",
     "mediumText": "It’s a normal day in 2021 and a",
     "mediumText2": "is planning to have some dinner."
 
@@ -36,7 +36,7 @@
     "text1": false,
     "text2": false,
     "bigText": false,
-    "accent":  "But does our user have the right questions? ",
+    "accent":  " But does our user have the right questions? ",
     "mediumText": "YouTube usually has answers.",
     "mediumText2": false
 

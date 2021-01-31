@@ -7,7 +7,6 @@ import Intro from "./components/view/intro/Intro";
 import IntroCover from "./components/view/intro/IntroCover";
 import Story from "./components/view/story/Story";
 import About from "./components/view/About";
-import Footer from "./components/layout/Footer";
 import "./assets/styles/styles.scss";
 
 const App = () => {
@@ -19,8 +18,7 @@ const App = () => {
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <Router>
-        {/* <NavBar /> */}
-        <div className="content">
+        <div className="content"> 
           <Switch>
             <Route
               path="/tips/:id?"
@@ -52,7 +50,6 @@ const App = () => {
             </Route>
           </Switch>
         </div>
-        <Footer />
       </Router>
     </>
   );
