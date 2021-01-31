@@ -4,6 +4,7 @@ import { Row, Col } from "react-flexbox-grid";
 import Pagination from "../../Pagination";
 import { useHistory } from "react-router-dom";
 import introPages from "../../../data/intro.json";
+import Footer from "../../layout/Footer";
 
 const Intro = ({ match }) => {
   const history = useHistory();
@@ -82,6 +83,7 @@ const Intro = ({ match }) => {
 
       {/* PAGINATION */}
       <Pagination object={introPages} path="intro" />
+      <Footer />
     </div>
   ) : (
     <IntroCover />

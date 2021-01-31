@@ -1,21 +1,26 @@
-.pagination { 
-    height: 36px;
-    background-color: $black;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 0 100px;
-    justify-content: center;
+.pagination {
+  height: 36px;
+  background-color: $black;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0 100px;
+  justify-content: center;
+  margin-top: -86px;
 
-    .pagination-indicator {
-        height: 6px;
-        background-color: $normal-gray;
-        width: 10%;
-        margin: 0 10px;
-        cursor: pointer;
+  @include tablet {
+    margin-top: none;
+  }
 
-        &.active {
-            background-color: $main-red;
-        }
-    }   
+  .pagination-indicator {
+    height: 6px;
+    background-color: $normal-gray;
+    width: 10%;
+    margin: 0 10px;
+    cursor: pointer;
+
+    &.active {
+      background-color: $main-red;
+    }
+  }
 }

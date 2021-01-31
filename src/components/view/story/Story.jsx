@@ -49,9 +49,9 @@ const Story = ({ match }) => {
         </div>
       </Col>
       <Col xl={12} sm={12} className="progress-bar-wrapper">
-        <div id="separator1" />
-        <div id="separator2" />
-        <input type="range" id={"progress-bar"} min="0" max="100" />
+        {/* <div id="separator1" />
+        <div id="separator2" /> */}
+        <input type="range" id={"progress-bar"} min="0" max="100"></input>
       </Col>
       <div md={2} className="controls">
         <button

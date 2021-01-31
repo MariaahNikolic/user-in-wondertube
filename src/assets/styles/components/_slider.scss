@@ -1,5 +1,4 @@
-
-$slider-width-number: 1600;
+$slider-width-number: 1700;
 $slider-width: $slider-width-number + px;
 $slider-height: 6px;
 $background-slider: $light-gray;
@@ -14,11 +13,11 @@ $fit-thumb-in-slider: -6.5px;
 
 @function makelongshadow($color, $size) {
   $val: 5px 0 0 $size $color;
-  
+
   @for $i from 6 through $slider-width-number {
     $val: #{$val}, #{$i}px 0 0 $size #{$color};
   }
-  
+
   @return $val;
 }
 
@@ -33,22 +32,40 @@ input {
   overflow: hidden;
   max-width: 100%;
   width: $slider-width;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: $black;
+    position: absolute;
+    top: 15px;
+  }
+
+  &:before {
+    left: 58%;
+  }
+  &:after {
+    left: 81%;
+  }
 
   &:focus {
     box-shadow: none;
     outline: none;
   }
-  
+
   &::-webkit-slider-runnable-track {
     background: $background-filled-slider;
-    content: '';
+    content: "";
     height: $slider-height;
     pointer-events: none;
   }
-  
+
   &::-webkit-slider-thumb {
     @include size($thumb-width, $thumb-height);
-    
+
     appearance: none;
     background: transparent;
     border-radius: $thumb-radius;
@@ -56,8 +73,7 @@ input {
     margin-top: $fit-thumb-in-slider;
     border: transparent;
   }
-  
-  
+
   &::-moz-range-track {
     width: $slider-width;
     height: $slider-height;
@@ -90,7 +106,7 @@ input {
     margin-top: 10px;
     width: $slider-width;
   }
-  
+
   &::-ms-thumb {
     @include size($thumb-width, $thumb-height);
 

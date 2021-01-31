@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <div className="intro-page intro-cover">
       <Row middle="lg" className="section-cover">
-        <Col xs={12} sm={6} md={6} lg={6}>
+        <Col xs={12} sm={12} md={12} lg={6}>
           <div className="intro-text body-1 yellow-background">
             <p>
               Content farms, algorithms, keywords, tracking!
@@ -34,7 +34,7 @@ const Intro = () => {
             </Link>
           </div>
         </Col>
-        <Col xs={12} sm={6} md={6} lg={6}>
+        <Col xs={12} sm={12} md={12} lg={6}>
           <div className="intro-title">
             <img src="/images/title.svg" />
           </div>

@@ -16,7 +16,7 @@ body {
 .content {
   overflow: hidden;
   color: $white;
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh);
 
   @include tablet {
     min-height: 300px;

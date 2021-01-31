@@ -4,6 +4,7 @@ import Pagination from "../../Pagination";
 import { useHistory } from "react-router-dom";
 import tips from "../../../data/tips.json";
 import TipsCover from "./TipsCover";
+import Footer from "../../layout/Footer";
 
 const Tips = ({ match }) => {
   const history = useHistory();
@@ -65,9 +66,10 @@ const Tips = ({ match }) => {
                 </Row>
               )
           )}
-
           {/* PAGINATION */}
           <Pagination object={tips} path="tips" />
+          <Footer />
+
         </>
       ) : (
         <TipsCover />
