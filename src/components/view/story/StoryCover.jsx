@@ -11,7 +11,7 @@ const StoryCover = () => {
         <strong className="yellow-accent">DISCLAIMER</strong>
         <p className="small">
           All videos, thumbnails and characters are non-fictional and based on
-          real data. Any resemblance to real life is purely NOT coincidental
+          real data. Any resemblance to real life is purely NOT coincidental.
         </p>
       </Col>
     </Row>

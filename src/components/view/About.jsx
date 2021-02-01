@@ -1,13 +1,17 @@
 import React from "react";
 import { Row, Col } from "react-flexbox-grid";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <Row id="about-page">
       <Col xl={8} lg={10} md={12}>
         <Row className="about-page-content">
-        <Col xl={12} className='close-button'><Link to="/intro"><img src="/images/icons/close.svg"/></Link></Col>
+          <Col xl={12} className="close-button">
+            <Link to="/intro">
+              <img src="/images/icons/close.svg" />
+            </Link>
+          </Col>
           <Col lg={12}>
             <h2 className="heading-lg yellow-background">ABOUT</h2>
             <p>
@@ -47,12 +51,10 @@ const About = () => {
             </p>
           </Col>
           <Col>
-            <h2 className="heading-lg yellow-background">AIM, FOCUS & OBJECTIVE</h2>
+            <h2 className="heading-lg yellow-background">
+              AIM, FOCUS & OBJECTIVE
+            </h2>
             <p>
-              <strong>User In The Wondertube</strong>
-              is a project developed during the Final Synthesis Laboratory in
-              the Density Lab at Politecnico di Milano.
-              <br /> <br />
               This project aims to allow viewers to reflect on the content they
               engage with online, provides insight on how algorithms and data
               gathering works, and thereby gives them the power to self-regulate
@@ -66,11 +68,11 @@ const About = () => {
               online. One of the strongest sources that draws internet consumers
               in is content farms.
               <br /> <br />
-              <em>User In The Wondertube</em> presents a This project aims to
-              present how content farms work in conjunction with algorithms, and
-              the specific points at which content farms monetise on the user
-              spending time on their content, and thereby allow viewers to have
-              more control over their browsing experience.
+              <em>User in the Wondertube</em> aims to present how content farms
+              work in conjunction with algorithms, and the specific points at
+              which content farms monetise on the user spending time on their
+              content, and thereby allow viewers to have more control over their
+              browsing experience.
             </p>
           </Col>
 
@@ -113,27 +115,112 @@ const About = () => {
             </p>
           </Col>
           <Col>
-            <h3><strong>Sources:</strong></h3>
+            <h3>
+              <strong>Sources:</strong>
+            </h3>
             <p>
-              Michael Boccacino. “Building Successful Multi-Channel Social Media
-              Strategies during COVID-19.” NewDigitalAge, June 11, 2020.
-              https://newdigitalage.co/2020/06/11/building-successful-multi-channel-social-media-strategies-during-covid-19/.
-              Michael Boccacino. “How Pinterest can be a useful platform for
-              brands.” NewDigitalAge, August 28, 2020.
-              https://newdigitalage.co/2020/08/28/how-pinterest-can-be-a-useful-platform-for-brands/.
-              Dave Davies, “Meet the 7 Most Popular Search Engines in the
-              World”, SEJ, January 7, 2018.
-              https://www.searchenginejournal.com/seo-101/meet-search-engines/#close
-              . Wattenhofer, Mirjam & Wattenhofer, Roger & Zhu, Zack. The
-              YouTube Social Network. 2012.
-              https://www.researchgate.net/publication/268367926_The_YouTube_Social_Network.
-              https://twitter.com/search?q=5%20minute%20cradts&src=typed_query
-              https://www.bbc.com/news/av/technology-51504484
-              https://www.vice.com/en/article/v7mmqm/viral-russian-youtube-channel-5-minute-crafts-not-a-psyop-just-good-at-making-videos
-              https://www.vice.com/en/article/3dkmwv/the-100-million-content-farm-thats-killing-the-internet
-              https://www.washingtonpost.com/arts-entertainment/2019/03/21/these-how-videos-youtube-wont-teach-you-how-be-better-adult-theyre-not-supposed/
-              https://www.globalreach.com/blog/2020/01/28/the-2nd-largest-search-engine-on-the-internet
-              https://time.com/5636360/five-minute-crafts-youtube-channel-explained/
+              <a
+                className="small-link"
+                href="https://newdigitalage.co/2020/06/11/building-successful-multi-channel-social-media-strategies-during-covid-19/"
+              >
+                Michael Boccacino. “Building Successful Multi-Channel Social
+                Media Strategies during COVID-19.” NewDigitalAge, June 11, 2020.
+              </a>
+              <br />
+              <a
+                className="small-link"
+                href="https://newdigitalage.co/2020/08/28/how-pinterest-can-be-a-useful-platform-for-brands/"
+              >
+                Michael Boccacino. “How Pinterest can be a useful platform for
+                brands.” NewDigitalAge, August 28, 2020.
+              </a>
+              <br />
+              <a
+                className="small-link"
+                href="https://www.searchenginejournal.com/seo-101/meet-search-engines/#close"
+              >
+                Dave Davies, “Meet the 7 Most Popular Search Engines in the
+                World”, SEJ, January 7, 2018.
+              </a>
+              <br />
+
+              <a
+                className="small-link"
+                href="https://www.researchgate.net/publication/268367926_The_YouTube_Social_Network"
+              >
+                Wattenhofer, Mirjam & Wattenhofer, Roger & Zhu, Zack. The
+                YouTube Social Network. 2012.
+              </a>
+              <br />
+
+              <a
+                className="small-link"
+                href="https://twitter.com/search?q=5%20minute%20cradts&src=typed_query"
+              >
+                https://twitter.com/search?q=5%20minute%20cradts&src=typed_query
+              </a>
+              <br />
+
+              <a
+                className="small-link"
+                href="https://www.bbc.com/news/av/technology-51504484"
+              >
+                https://www.bbc.com/news/av/technology-51504484
+              </a>
+              <br />
+
+              <a
+                className="small-link"
+                href="https://www.vice.com/en/article/v7mmqm/viral-russian-youtube-channel-5-minute-crafts-not-a-psyop-just-good-at-making-videos"
+              >
+                https://www.vice.com/en/article/v7mmqm/viral-russian-youtube-channel-5-minute-crafts-not-a-psyop-just-good-at-making-videos
+              </a>
+              <br />
+
+              <a
+                className="small-link"
+                href="https://www.vice.com/en/article/3dkmwv/the-100-million-content-farm-thats-killing-the-internet"
+              >
+                https://www.vice.com/en/article/3dkmwv/the-100-million-content-farm-thats-killing-the-internet
+              </a>
+              <br />
+
+              <a
+                className="small-link"
+                href="https://www.washingtonpost.com/arts-entertainment/2019/03/21/these-how-videos-youtube-wont-teach-you-how-be-better-adult-theyre-not-supposed/"
+              >
+                https://www.washingtonpost.com/arts-entertainment/2019/03/21/these-how-videos-youtube-wont-teach-you-how-be-better-adult-theyre-not-supposed/
+              </a>
+              <br />
+
+              <a
+                className="small-link"
+                href="https://www.globalreach.com/blog/2020/01/28/the-2nd-largest-search-engine-on-the-internet"
+              >
+                https://www.globalreach.com/blog/2020/01/28/the-2nd-largest-search-engine-on-the-internet
+              </a>
+              <br />
+
+              <a
+                className="small-link"
+                href="https://time.com/5636360/five-minute-crafts-youtube-channel-explained/"
+              >
+                https://time.com/5636360/five-minute-crafts-youtube-channel-explained/
+              </a>
+            </p>
+          </Col>
+          <Col xl={12} xs={12}>
+            <h4>
+              <strong>Project by:</strong>
+            </h4>
+            <p>
+              Sneha Baliga <br />
+              Dang Trung Nguyen <br />
+              Marija Nikolić <br />
+              Bogdan Novaković <br />
+              Julia Chlastacz <br />
+              Preetui Puri <br />
+              Chenyun Zeng
             </p>
           </Col>
         </Row>
