@@ -45,4 +45,8 @@
 .small-link {
   color: $black;
   font-size: 0.75rem;
+
+  &:visited {
+    color: $main-red;
+  }
 }

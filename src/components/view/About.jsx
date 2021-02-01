@@ -120,6 +120,7 @@ const About = () => {
             </h3>
             <p>
               <a
+                target="_blank"
                 className="small-link"
                 href="https://newdigitalage.co/2020/06/11/building-successful-multi-channel-social-media-strategies-during-covid-19/"
               >
@@ -128,6 +129,7 @@ const About = () => {
               </a>
               <br />
               <a
+                target="_blank"
                 className="small-link"
                 href="https://newdigitalage.co/2020/08/28/how-pinterest-can-be-a-useful-platform-for-brands/"
               >
@@ -136,6 +138,7 @@ const About = () => {
               </a>
               <br />
               <a
+                target="_blank"
                 className="small-link"
                 href="https://www.searchenginejournal.com/seo-101/meet-search-engines/#close"
               >
@@ -145,6 +148,7 @@ const About = () => {
               <br />
 
               <a
+                target="_blank"
                 className="small-link"
                 href="https://www.researchgate.net/publication/268367926_The_YouTube_Social_Network"
               >
@@ -154,6 +158,7 @@ const About = () => {
               <br />
 
               <a
+                target="_blank"
                 className="small-link"
                 href="https://twitter.com/search?q=5%20minute%20cradts&src=typed_query"
               >
@@ -162,6 +167,7 @@ const About = () => {
               <br />
 
               <a
+                target="_blank"
                 className="small-link"
                 href="https://www.bbc.com/news/av/technology-51504484"
               >
@@ -170,6 +176,7 @@ const About = () => {
               <br />
 
               <a
+                target="_blank"
                 className="small-link"
                 href="https://www.vice.com/en/article/v7mmqm/viral-russian-youtube-channel-5-minute-crafts-not-a-psyop-just-good-at-making-videos"
               >
@@ -178,6 +185,7 @@ const About = () => {
               <br />
 
               <a
+                target="_blank"
                 className="small-link"
                 href="https://www.vice.com/en/article/3dkmwv/the-100-million-content-farm-thats-killing-the-internet"
               >
@@ -186,6 +194,7 @@ const About = () => {
               <br />
 
               <a
+                target="_blank"
                 className="small-link"
                 href="https://www.washingtonpost.com/arts-entertainment/2019/03/21/these-how-videos-youtube-wont-teach-you-how-be-better-adult-theyre-not-supposed/"
               >
@@ -194,6 +203,7 @@ const About = () => {
               <br />
 
               <a
+                target="_blank"
                 className="small-link"
                 href="https://www.globalreach.com/blog/2020/01/28/the-2nd-largest-search-engine-on-the-internet"
               >
@@ -202,6 +212,7 @@ const About = () => {
               <br />
 
               <a
+                target="_blank"
                 className="small-link"
                 href="https://time.com/5636360/five-minute-crafts-youtube-channel-explained/"
               >
