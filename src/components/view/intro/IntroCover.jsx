@@ -36,7 +36,7 @@ const Intro = () => {
         </Col>
         <Col xs={12} sm={12} md={12} lg={6}>
           <div className="intro-title">
-            <img src="/images/title.svg" />
+            <img src="/images/title.png" />
           </div>
           <Button src="/intro/1" />
         </Col>
