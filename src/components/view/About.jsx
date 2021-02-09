@@ -220,7 +220,7 @@ const About = () => {
               </a>
             </p>
           </Col>
-          <Col xl={12} xs={12}>
+          <Col xl={4} xs={12} className="credits">
             <h4>
               <strong>Project by:</strong>
             </h4>
@@ -233,6 +233,50 @@ const About = () => {
               Preetui Puri <br />
               Chenyun Zeng
             </p>
+          </Col>
+          <Col xl={4} xs={12} className="credits">
+            <h4>
+              <strong>Faculty:</strong>
+            </h4>
+            <p>
+              Michele Mauri
+              <br />
+              Gabriele Colombo
+              <br />
+              Angeles Briones
+              <br />
+              Simone Vantini
+              <br />
+              Salvatore Zingale
+            </p>
+          </Col>
+          <Col xl={4} xs={12} className="credits">
+            <h4>
+              <strong>Assistants:</strong>
+            </h4>
+            <p>
+              Antonella Autuori
+              <br />
+              Andrea Benedetti
+              <br />
+              Matteo Bettini
+              <br />
+              Tommaso Elli
+              <br />
+              Andrea Febres
+              <br />
+              Beatrice Gobbo
+            </p>
+          </Col>
+          <Col xl={12} xs={12}>
+            <Row className="logos-wrapper">
+              <Col xl={2} className="logo">
+                <img src="/images/logo_density.svg" alt="density logo" />
+              </Col>
+              <Col xl={2} className="logo">
+                <img src="/images/logo_polimi.svg" alt="polimi logo" />
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Col>

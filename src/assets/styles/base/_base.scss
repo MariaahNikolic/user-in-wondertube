@@ -47,6 +47,33 @@ img {
   display: inline-block;
 }
 
+.button-3 {
+  background-color: $main-yellow;
+  padding: 16px;
+  display: inline-block;
+  color: $black;
+}
+
+.logos-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  border-top: 1px solid gray;
+  padding-top: 20px;
+}
+
+.credits {
+  margin-top: 24px;
+  p {
+    margin: 0;
+  }
+}
+
+.logo {
+  padding: 20px 0;
+}
+
 .arrows {
   display: flex;
   align-items: center;
